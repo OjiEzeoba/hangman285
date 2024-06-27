@@ -64,6 +64,9 @@ import random
 words = ['Apple', 'Mango', 'Peach', 'BlackGrape', 'Pineapple']
 secret_word = random.choice(words)
 
+def check_guess(guess):
+    guess = guess.lower()
+    
 while True:
     
     guess = input("Guess a letter: ")
@@ -109,6 +112,7 @@ def ask_for_input():
 
 
 ask_for_input()
+
 ```
 
 
